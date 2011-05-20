@@ -11,3 +11,6 @@ Para simplificar el dhcpd.conf actual, la idea es mover todas las entradas de
 las distintas redes dentro de archivos separados, por ejemplo, red1-dhcpd.conf,
 red2-dhcpd.conf. La configuracion global se mantiene en dhcpd.conf y se 
 utiliza include para los distintos archivos de las distintas redes.
+
+Este programa solo leeria red1-dhcpd.conf, red2-dhcpd.conf, etc; sin modificar
+la configuracion global mantenida en dhcpd.conf.

@@ -1,0 +1,13 @@
+
+Simple editor para no hacer lios con los archivos dhcpd.conf
+
+La idea es leer las entradas de hosts de todas las redes y mantener esa
+configuracion en memoria.
+Presentar un menu para editar alguna entrada, o agregar nuevas.
+Cuando se finaliza de realizar cambios, el programa guarda una copia de
+respaldo, y genera los archivos nuevamente con la configuracion en memoria.
+
+Para simplificar el dhcpd.conf actual, la idea es mover todas las entradas de 
+las distintas redes dentro de archivos separados, por ejemplo, red1-dhcpd.conf,
+red2-dhcpd.conf. La configuracion global se mantiene en dhcpd.conf y se 
+utiliza include para los distintos archivos de las distintas redes.
